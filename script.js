@@ -1,5 +1,10 @@
 const display = document.querySelector('#display')
 const buttons = document.querySelectorAll('button')
+function changeBg() {
+    const html = document.documentElement
+    html.classList.toggle("light")
+    
+}
 
 buttons.forEach((item) => {
     item.onclick = () => {
@@ -28,5 +33,3 @@ themeToggleBtn.onclick = () => {
     themeToggleBtn.classList.toggle('active')
     isDark = !isDark
 }
-
-console.log("oi")
